@@ -37,3 +37,24 @@ alert(hobbies[0]);
 // we assign an index number to each item on tha array.
 // that index number starts at 0
 // so sports=0 cooking=1 reading=2
+
+let newVar = "Avishka" + " Indula";
+alert(newVar);
+// this is how we split string and add them together
+
+let job = { title: "Developer", place: "New York", salary: 50000 };
+// this is a object
+// object contains different properties
+// property is a combination of a label and a value
+// for example, "just" a job title doesn't represent the big picture of a person's job roll.
+// As a solution for that, first we can create a object called "job".
+// Then we can give it some properties that describe the person's job.
+// These properties all together defines the overall nature of the person's job.
+
+// objects simplifies the code that could be written like shown below otherwise.
+// let jobTitle = "developer";
+// let jobPlace = "New York";
+// let jobSalary = 50000;
+
+alert(job.title);
+// this is how we access a property of an object
