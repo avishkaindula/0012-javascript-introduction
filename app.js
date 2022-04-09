@@ -17,32 +17,32 @@
 // alert(nextText);
 // alert(nextText);
 
-// we can also "overwrite" the value of the nextText variable.
-// The new value is assigned to the nextText variable "after" the first value is assigned and executed to it.
 // nextText = "I like to produce music to!";
+// we can also "overwrite" the value of the nextText variable like shown above.
+// The new value is assigned to the nextText variable "after" the first value is assigned and executed to it.
 // alert(nextText);
 
 // let myAge;
 // myAge = 20;
 // alert(myAge);
 
-let hobbies = ["Sports", "Cooking", "Reading", 1, 2];
+// let hobbies = ["Sports", "Cooking", "Reading", 1, 2];
 // this is a JavaScript array.
 // these are variables that holds more than one value.
 // we can use a combination of strings and numbers as values of a JS array.
-alert(hobbies);
+// alert(hobbies);
 
-alert(hobbies[0]);
+// alert(hobbies[0]);
 // this is how we select a single item from the array
 // we assign an index number to each item on tha array.
 // that index number starts at 0
 // so sports=0 cooking=1 reading=2
 
-let newVar = "Avishka" + " Indula";
-alert(newVar);
+// let newVar = "Avishka" + " Indula";
+// alert(newVar);
 // this is how we split string and add them together
 
-let job = { title: "Developer", place: "New York", salary: 50000 };
+// let job = { title: "Developer", place: "Sri Lanka", salary: 50000 };
 // this is a object
 // object contains different properties
 // property is a combination of a label and a value
@@ -53,8 +53,17 @@ let job = { title: "Developer", place: "New York", salary: 50000 };
 
 // objects simplifies the code that could be written like shown below otherwise.
 // let jobTitle = "developer";
-// let jobPlace = "New York";
+// let jobPlace = "Sri Lanka";
 // let jobSalary = 50000;
 
-alert(job.title);
+// alert(job.title);
 // this is how we access a property of an object
+
+let age = 32;
+let userName = "Avishka Indula";
+let hobbies = ["Sports", "Cooking", "Reading"];
+let job = { title: "Developer", place: "Sri Lanka", salary: 50000 };
+
+let adultYears = age - 18;
+// this is how we perform operations in JavaScript
+alert(adultYears);
