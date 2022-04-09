@@ -4,6 +4,8 @@
 // to use a ' mark inside a string, we need to add \ mark before ' mark.
 // we can also use double quotes at the beginning and single quotes in the middle.
 
+// ----------------------------------------------------------------------------------------------------------------------
+
 // let greetingText;
 // greetingText = "Hi, I'm a self taught developer!";
 // "let" is the keyword to create variables.
@@ -26,6 +28,12 @@
 // myAge = 20;
 // alert(myAge);
 
+// let newVar = "Avishka" + " Indula";
+// alert(newVar);
+// this is how we split string and add them together
+
+// ---------------------------------------------------------------------------------------------------------------------
+
 // let hobbies = ["Sports", "Cooking", "Reading", 1, 2];
 // this is a JavaScript array.
 // these are variables that holds more than one value.
@@ -38,9 +46,7 @@
 // that index number starts at 0
 // so sports=0 cooking=1 reading=2
 
-// let newVar = "Avishka" + " Indula";
-// alert(newVar);
-// this is how we split string and add them together
+// -----------------------------------------------------------------------------------------------------------------------
 
 // let job = { title: "Developer", place: "Sri Lanka", salary: 50000 };
 // this is a object
@@ -59,11 +65,86 @@
 // alert(job.title);
 // this is how we access a property of an object
 
-let age = 32;
+// ----------------------------------------------------------------------------------------------------------------------
+
+let age = 35;
 let userName = "Avishka Indula";
 let hobbies = ["Sports", "Cooking", "Reading"];
 let job = { title: "Developer", place: "Sri Lanka", salary: 50000 };
 
-let adultYears = age - 18;
+// let adultYears = age - 18;
 // this is how we perform operations in JavaScript
+// alert(adultYears);
+
+let adultYears;
+// before creating a function, we should first create a variable that holds the calculated result of the function.
+function calculateAdultYears() {
+  let exampleAddition = 10 + 8;
+  // the variables created "inside" functions can "only" be used "inside" the functions.
+  adultYears = age - exampleAddition;
+}
+// this is how we create a function
+
+calculateAdultYears();
+// we should "call" the function like this before outputting it's result.
+// the calculation inside that function gets executed only when calling that function like this.
 alert(adultYears);
+
+age = 45;
+calculateAdultYears();
+alert(adultYears);
+
+// --------------------------------------------------------------------------------------------------------------------
+
+// We can also create a function without creating a variable that hold the calculated result of the function
+// For that, we need to use the "return" keyword inside the function.
+function againCalculateAdultYears() {
+  return age - 18;
+}
+
+let totalAdultYears;
+
+age = 55;
+totalAdultYears = againCalculateAdultYears();
+alert(totalAdultYears);
+
+age = 65;
+totalAdultYears = againCalculateAdultYears();
+// We should call the function again like this and assign it's value to totalAdultYears when we assign a new value to age.
+// If not, the below alert will output the result for age value of 55 again.
+alert(totalAdultYears);
+
+// ---------------------------------------------------------------------------------------------------------------------
+
+let userYears;
+
+function userAdultYears(userAge) {
+  return userAge - 18;
+}
+// The userAge variable defined inside parenthesis is a variable that we use "inside" the function
+// These variables are known as Parameters.
+
+age = 75;
+userYears = userAdultYears(age);
+// When we call the function, we need to assign values to the parameters we defined in the function like this.
+// That value can be assigned to the parameter as a "variable" which holds a value.
+// This "age" is such a variable that holds a value.
+alert(userYears);
+
+userYears = userAdultYears(85);
+// We can also assign a value "directly" to the parameters like this.
+alert(userYears);
+
+// --------------------------------------------------------------------------------------------------------------------
+
+let anotherVariable;
+
+function anotherFunction(firstParameter, secondParameter) {
+  // We can create multiple parameters inside functions like this.
+  // We should separate those parameters using a coma.
+  return firstParameter + secondParameter;
+}
+
+anotherVariable = anotherFunction(21, 23);
+// When we call a function which holds two parameters, we also need to pass "two values" for those parameters like this.
+alert(anotherVariable);
