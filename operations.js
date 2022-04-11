@@ -50,3 +50,16 @@ console.log(sum);
 sum /= 5;
 console.log(sum);
 // this means sum = sum / 5
+
+// ----------------------------------------------------------------------------------------------------------
+
+console.log("Avishka" + " Indula");
+// this is how we combine two strings.
+
+let newUserName = "Indula";
+console.log(newUserName.length);
+// this is how we get the count of characters of the string.
+console.log(newUserName.toUpperCase());
+// this is how we convert all string characters into upper case.
+// since toUpperCase is a method, we need to execute it by adding two parentheses.
+
