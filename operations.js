@@ -63,3 +63,15 @@ console.log(newUserName.toUpperCase());
 // this is how we convert all string characters into upper case.
 // since toUpperCase is a method, we need to execute it by adding two parentheses.
 
+// -----------------------------------------------------------------------------------------------------------
+
+let newHobbies = [
+  "Music",
+  "Movies",
+  "YouTube",
+  "TV-Series",
+  "Clash of Clans",
+  "Social Media",
+];
+console.log(newHobbies.length);
+// if we use length inside an array, we get the count of values which the array holds.
